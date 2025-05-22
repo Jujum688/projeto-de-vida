@@ -9,18 +9,25 @@
 </head>
 
 <body>
+    <!-- Botões de zoom bonitinhos -->
+    <div class="zoom-controls">
+        <button class="zoom-btn" id="zoom-out">A-</button>
+        <button class="zoom-btn" id="zoom-in">A+</button>
+    </div>
+
     <section class="conteudo-principal">
         <h2 class="titulo-principal">Meus objetivos do ano<span>_</span></h2>
         <div class="conteudo">
             <div class="botoes">
-                <button class="botao ativo">Cursos na Alura</button>
-                <button class="botao">Criar projetos em Javascript</button>
-                <button class="botao">Criar um portfolio</button>
-                <button class="botao">Atualizar meu currículo</button>
+                <button class="botao ativo">Tirar minha CNH</button>
+                <button class="botao">Viajar no Ano Novo</button>
+                <button class="botao">Fazer o ENEM</button>
+                <button class="botao">Conseguir um emprego novo</button>
+                <button class="botao">Passar em Psicologia na UFPR</button>
             </div>
             <div class="abas-textos">
                 <div class="aba-conteudo ativo">
-                    <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+                    <h3 class="aba-conteudo-titulo-principal">Tirar minha CNH</h3>
                     <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
                     <div class="contador">
                         <div class="contador-digito">
@@ -41,8 +48,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+                    <h3 class="aba-conteudo-titulo-principal">Viajar com minha família no Ano Novo</h3>
                     <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
                     <div class="contador">
                         <div class="contador-digito">
@@ -63,8 +71,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Criar um portfolio com os meus 3 melhores projetos</h3>
+                    <h3 class="aba-conteudo-titulo-principal">Fazer o ENEM</h3>
                     <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
                     <div class="contador">
                         <div class="contador-digito">
@@ -85,8 +94,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Atualizar meu curriculo com os certificados da Alura</h3>
+                    <h3 class="aba-conteudo-titulo-principal">Conseguir um emprego novo</h3>
                     <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
                     <div class="contador">
                         <div class="contador-digito">
@@ -107,9 +117,37 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">Passar em Psicologia na UFPR</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador">
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="dias4"></p>
+                            <p class="contador-digito-texto">dias</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="horas4"></p>
+                            <p class="contador-digito-texto">horas</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="min4"></p>
+                            <p class="contador-digito-texto">min</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="seg4"></p>
+                            <p class="contador-digito-texto">seg</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <div class="contador-total">
+        Dias restantes no total: <span id="total-dias"></span>
+    </div>
+
     <script src="main.js"></script>
 </body>
 
